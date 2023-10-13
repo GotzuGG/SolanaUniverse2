@@ -1,0 +1,24 @@
+.payment-panel {
+    width: 300px;
+    background-color: #8DB287;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.payment-method i {
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.payment-method label {
+    font-size: 20px;
+}

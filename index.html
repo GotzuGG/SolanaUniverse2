@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Solana Systems</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="metodop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+   
+
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#userpanel">Solana Systems</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#userpanel" onclick="seleccionar()">User panel</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Statistics</a></li>
+                    <li><a href="#payment" onclick="seleccionar()">Payment methods</a></li>
+                    <li><a href="#nft" onclick="seleccionar()">My Nft's</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="userpanel" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/user.png" alt="">
+            </div>
+            <h1>Jesus Lizarraga</h1>
+            <h2>Criptoentusiasta</h2>
+            <div class="redes">
+                <h3>SOL $3.002231</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECCION MYNFT -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Statistics</h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <h3>STATISTICS</h3>
+                    <div class="skill">
+                        <span>
+                            Bitcoin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>5.95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ethereum</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>9.18%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>
+                              Tether</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0.07%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>USD Coin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0.09%%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>BNB</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>7.80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <h3>CRYPTO</h3>
+                    <div class="skill">
+                        <span>Binance USD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>0.04</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>
+                            XRP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>2.57%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Cardano</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>3.94%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Solana</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>8.73%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>
+                            Dogecoin</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>3.90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PAYMENT -->
+
+    
+    <section id="payment" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Payment Methods</h2>
+
+            <div class="payment-panel">
+                <div class="payment-method" onclick="selectPayment('visa')">
+                    <i class="fab fa-cc-visa"></i>
+                    <label>Visa</label>
+                </div>
+                <div class="payment-method" onclick="selectPayment('mastercard')">
+                    <i class="fab fa-cc-mastercard"></i>
+                    <label>MasterCard</label>
+                </div>
+                <div class="payment-method" onclick="selectPayment('paypal')">
+                    <i class="fab fa-paypal"></i>
+                    <label>PayPal</label>
+                </div>
+                <div class="payment-method" onclick="selectPayment('amex')">
+                    <i class="fab fa-cc-amex"></i>
+                    <label>American Express</label>
+                </div>
+                <p> Make transactions</p>
+                <a href="http://localhost:3000/" onclick="seleccionar()">Click here</a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SETTINGS -->
+    <section id="nft" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>MY NFTS</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/coche.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CAR</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/spiderman.jpg" alt="">
+                    <div class="overlay">
+                        <h3>VENOM</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img//apple.jpg" alt="">
+                    <div class="overlay">
+                        <h3>APPLE</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pcs.jpg" alt="">
+                    <div class="overlay">
+                        <h3>COMPUTER</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/cripto.jpg" alt="">
+                    <div class="overlay">
+                        <h3>CRYPTO</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/criptosol.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Crypto SOLANA</h3>
+                        <p>NFT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION ULTINMA-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            
+            <div class="fila">
+              
+                <div class="col">
+                    
+                </div>
+               
+                <div class="col">
+                    
+                    <div class="info">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://twitter.com/solana582589124"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
